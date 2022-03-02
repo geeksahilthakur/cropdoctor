@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "374242095596",
+    "project_id": "kissan-ai",
+    "storage_bucket": "kissan-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374242095596:android:05fefa8608801721d490c9",
+        "android_client_info": {
+          "package_name": "com.iamsahil.apple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374242095596-amb6lfda9grcthgri85p80qelmmid5dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6QBehy9klyPmgjVsOk0xeogoB48-M8co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374242095596-amb6lfda9grcthgri85p80qelmmid5dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

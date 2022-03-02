@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trt">
+
+    <LinearLayout
+        android:id="@+id/top2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Kissan"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/clogo"/>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A.I assitant for farmers"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:padding="10dp"
+        android:id="@+id/crd0"
+        android:layout_below="@+id/top2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20dp">
+
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/g"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Apple Scab"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="107dp"
+                android:layout_below="@id/title2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text=" Apple scab is caused by the fungus Venturia inaequalis. The apple scab fungus overwinters on fallen diseased leaves. In spring, these fungi shoot spores into the air."
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="143dp"
+                android:layout_height="160dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:maxHeight="100dp"
+                android:src="@drawable/asrmd"
+                tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:padding="10dp"
+        android:id="@+id/crd1"
+        android:layout_below="@+id/crd0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp">
+
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/g"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Leaf Scab"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title3"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="Scab is caused by a fungus that infects both leaves and fruit. Scabby fruit are often unfit for eating. Infected leaves have olive green to brown spots. Leaves with many leaf spots turn yellow and fall off early."
+                android:textColor="@color/org"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="160dp"
+                android:layout_alignParentEnd="true"
+                android:maxHeight="100dp"
+                android:src="@drawable/lsrmd"
+                tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:padding="10dp"
+        android:id="@+id/crd3"
+        android:layout_below="@+id/crd1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp">
+
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/g"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Steam Canker"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title5"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="Apple canker is a disease caused by a fungus,Neonectria ditissima, which attacks the bark of apples and some other trees, causing a sunken area of dead bark and, eventually, death of the branch."
+                android:textColor="@color/brown"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="143dp"
+                android:layout_height="160dp"
+                android:layout_alignParentEnd="true"
+                android:maxHeight="100dp"
+                android:src="@drawable/crrmd"
+                tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+</RelativeLayout>
